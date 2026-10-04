@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEST SIDE | Sports</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="page-shell page-inner">
+      <header class="topbar">
+        <div class="brand" aria-label="WEST SIDE home">
+          <span class="brand-mark" aria-hidden="true">W</span>
+          <span class="brand-wordmark">WEST SIDE</span>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="sports.html" class="active">Sports</a>
+          <a href="dashboard.html">My Bets</a>
+          <a href="wallet.html">Wallet</a>
+          <a href="admin.html">Admin</a>
+        </nav>
+
+        <div class="top-actions">
+          <button class="btn btn-ghost">Log in</button>
+          <button class="btn btn-primary">Join now</button>
+        </div>
+      </header>
+
+      <main class="page-content">
+        <section class="section-header-row">
+          <div>
+            <p class="eyebrow">Browse markets</p>
+            <h1>Sports &amp; fixtures</h1>
+          </div>
+          <div class="filter-row">
+            <button class="filter-chip active" data-filter="All">All</button>
+            <button class="filter-chip" data-filter="Football">Football</button>
+            <button class="filter-chip" data-filter="Basketball">Basketball</button>
+            <button class="filter-chip" data-filter="Tennis">Tennis</button>
+          </div>
+        </section>
+
+        <section class="feature-banner">
+          <div>
+            <span>Featured market</span>
+            <h3>Premier League double header</h3>
+          </div>
+          <a href="index.html" class="btn btn-primary small">Play now</a>
+        </section>
+
+        <section class="match-list-wrap">
+          <article class="fixture-card">
+            <div class="fixture-meta">
+              <span class="league-badge">Premier League</span>
+              <span class="status-live">Live</span>
+            </div>
+            <div class="fixture-body">
+              <div class="teams-inline">
+                <strong>Manchester City</strong>
+                <span>vs</span>
+                <strong>Liverpool</strong>
+              </div>
+              <p>Saturday, 20:00</p>
+              <div class="budget-row">
+                <span class="budget-pill"><strong>City</strong> €1.08B</span>
+                <span class="budget-pill"><strong>Liverpool</strong> €950M</span>
+              </div>
+            </div>
+            <div class="market-list">
+              <button class="market-option pick" data-match="Manchester City vs Liverpool" data-market="Home Win" data-odds="2.05">2.05</button>
+              <button class="market-option pick" data-match="Manchester City vs Liverpool" data-market="Draw" data-odds="3.20">3.20</button>
+              <button class="market-option pick" data-match="Manchester City vs Liverpool" data-market="Away Win" data-odds="2.90">2.90</button>
+            </div>
+          </article>
+
+          <article class="fixture-card">
+            <div class="fixture-meta">
+              <span class="league-badge">Premier League</span>
+              <span class="status-live">LIVE</span>
+            </div>
+            <div class="fixture-body">
+              <div class="teams-inline">
+                <strong>Manchester City</strong>
+                <span>vs</span>
+                <strong>Aston Villa</strong>
+              </div>
+              <p>1:1 • 68'</p>
+              <div class="budget-row">
+                <span class="budget-pill"><strong>City</strong> €1.08B</span>
+                <span class="budget-pill"><strong>Aston Villa</strong> €390M</span>
+              </div>
+            </div>
+            <div class="market-list">
+              <button class="market-option pick" data-match="Manchester City vs Aston Villa" data-market="Home Win" data-odds="1.68">1.68</button>
+              <button class="market-option pick" data-match="Manchester City vs Aston Villa" data-market="Draw" data-odds="3.80">3.80</button>
+              <button class="market-option pick" data-match="Manchester City vs Aston Villa" data-market="Away Win" data-odds="4.70">4.70</button>
+            </div>
+          </article>
+
+          <article class="fixture-card">
+            <div class="fixture-meta">
+              <span class="league-badge">Premier League</span>
+              <span class="status-live">LIVE</span>
+            </div>
+            <div class="fixture-body">
+              <div class="teams-inline">
+                <strong>Liverpool</strong>
+                <span>vs</span>
+                <strong>Newcastle United</strong>
+              </div>
+              <p>2:0 • 73'</p>
+              <div class="budget-row">
+                <span class="budget-pill"><strong>Liverpool</strong> €950M</span>
+                <span class="budget-pill"><strong>Newcastle</strong> €430M</span>
+              </div>
+            </div>
+            <div class="market-list">
+              <button class="market-option pick" data-match="Liverpool vs Newcastle United" data-market="Liverpool Win" data-odds="1.57">1.57</button>
+              <button class="market-option pick" data-match="Liverpool vs Newcastle United" data-market="Draw" data-odds="4.20">4.20</button>
+              <button class="market-option pick" data-match="Liverpool vs Newcastle United" data-market="Newcastle United Win" data-odds="5.40">5.40</button>
+            </div>
+          </article>
+
+          <article class="fixture-card">
+            <div class="fixture-meta">
+              <span class="league-badge">Premier League</span>
+              <span class="status-live">LIVE</span>
+            </div>
+            <div class="fixture-body">
+              <div class="teams-inline">
+                <strong>Tottenham Hotspur</strong>
+                <span>vs</span>
+                <strong>Chelsea</strong>
+              </div>
+              <p>1:1 • 79'</p>
+              <div class="budget-row">
+                <span class="budget-pill"><strong>Tottenham</strong> €680M</span>
+                <span class="budget-pill"><strong>Chelsea</strong> €1.15B</span>
+              </div>
+            </div>
+            <div class="market-list">
+              <button class="market-option pick" data-match="Tottenham Hotspur vs Chelsea" data-market="Tottenham Hotspur Win" data-odds="2.30">2.30</button>
+              <button class="market-option pick" data-match="Tottenham Hotspur vs Chelsea" data-market="Draw" data-odds="3.25">3.25</button>
+              <button class="market-option pick" data-match="Tottenham Hotspur vs Chelsea" data-market="Chelsea Win" data-odds="2.80">2.80</button>
+            </div>
+          </article>
+
+          <article class="fixture-card">
+            <div class="fixture-meta">
+              <span class="league-badge">Premier League</span>
+              <span class="status-live">LIVE</span>
+            </div>
+            <div class="fixture-body">
+              <div class="teams-inline">
+                <strong>Manchester United</strong>
+                <span>vs</span>
+                <strong>Arsenal</strong>
+              </div>
+              <p>0:2 • 84'</p>
+              <div class="budget-row">
+                <span class="budget-pill"><strong>United</strong> €820M</span>
+                <span class="budget-pill"><strong>Arsenal</strong> €720M</span>
+              </div>
+            </div>
+            <div class="market-list">
+              <button class="market-option pick" data-match="Manchester United vs Arsenal" data-market="Manchester United Win" data-odds="3.70">3.70</button>
+              <button class="market-option pick" data-match="Manchester United vs Arsenal" data-market="Draw" data-odds="3.50">3.50</button>
+              <button class="market-option pick" data-match="Manchester United vs Arsenal" data-market="Arsenal Win" data-odds="1.95">1.95</button>
+            </div>
+          </article>
+
+          <article class="fixture-card">
+            <div class="fixture-meta">
+              <span class="league-badge">La Liga</span>
+              <span class="status-live">LIVE</span>
+            </div>
+            <div class="fixture-body">
+              <div class="teams-inline">
+                <strong>Real Madrid</strong>
+                <span>vs</span>
+                <strong>Barcelona</strong>
+              </div>
+              <p>3:2 • 82'</p>
+              <div class="budget-row">
+                <span class="budget-pill"><strong>Real</strong> €1.25B</span>
+                <span class="budget-pill"><strong>Barça</strong> €1.05B</span>
+              </div>
+            </div>
+            <div class="market-list">
+              <button class="market-option pick" data-match="Real Madrid vs Barcelona" data-market="Home Win" data-odds="2.10">2.10</button>
+              <button class="market-option pick" data-match="Real Madrid vs Barcelona" data-market="Draw" data-odds="3.40">3.40</button>
+              <button class="market-option pick" data-match="Real Madrid vs Barcelona" data-market="Away Win" data-odds="2.90">2.90</button>
+            </div>
+          </article>
+
+          <article class="fixture-card">
+            <div class="fixture-meta">
+              <span class="league-badge">La Liga</span>
+              <span class="status-live">LIVE</span>
+            </div>
+            <div class="fixture-body">
+              <div class="teams-inline">
+                <strong>Atletico Madrid</strong>
+                <span>vs</span>
+                <strong>Sevilla</strong>
+              </div>
+              <p>1:1 • 68'</p>
+              <div class="budget-row">
+                <span class="budget-pill"><strong>Atleti</strong> €550M</span>
+                <span class="budget-pill"><strong>Sevilla</strong> €260M</span>
+              </div>
+            </div>
+            <div class="market-list">
+              <button class="market-option pick" data-match="Atletico Madrid vs Sevilla" data-market="Atletico Madrid Win" data-odds="1.82">1.82</button>
+              <button class="market-option pick" data-match="Atletico Madrid vs Sevilla" data-market="Draw" data-odds="3.50">3.50</button>
+              <button class="market-option pick" data-match="Atletico Madrid vs Sevilla" data-market="Sevilla Win" data-odds="4.10">4.10</button>
+            </div>
+          </article>
+
+          <article class="fixture-card">
+            <div class="fixture-meta">
+              <span class="league-badge">Bundesliga</span>
+              <span class="status-live">LIVE</span>
+            </div>
+            <div class="fixture-body">
+              <div class="teams-inline">
+                <strong>Bayern Munich</strong>
+                <span>vs</span>
+                <strong>RB Leipzig</strong>
+              </div>
+              <p>2:1 • 72'</p>
+              <div class="budget-row">
+                <span class="budget-pill"><strong>Bayern</strong> €1.08B</span>
+                <span class="budget-pill"><strong>Leipzig</strong> €420M</span>
+              </div>
+            </div>
+            <div class="market-list">
+              <button class="market-option pick" data-match="Bayern Munich vs RB Leipzig" data-market="Bayern Munich Win" data-odds="1.58">1.58</button>
+              <button class="market-option pick" data-match="Bayern Munich vs RB Leipzig" data-market="Draw" data-odds="4.30">4.30</button>
+              <button class="market-option pick" data-match="Bayern Munich vs RB Leipzig" data-market="RB Leipzig Win" data-odds="5.20">5.20</button>
+            </div>
+          </article>
+
+          <article class="fixture-card">
+            <div class="fixture-meta">
+              <span class="league-badge">NBA</span>
+              <span class="status-upcoming">18:00</span>
+            </div>
+            <div class="fixture-body">
+              <div class="teams-inline">
+                <strong>Boston Celtics</strong>
+                <span>vs</span>
+                <strong>Miami Heat</strong>
+              </div>
+              <p>Friday, 18:00</p>
+            </div>
+            <div class="market-list">
+              <button class="market-option pick" data-match="Boston Celtics vs Miami Heat" data-market="Celtics Win" data-odds="1.68">1.68</button>
+              <button class="market-option pick" data-match="Boston Celtics vs Miami Heat" data-market="Heat Win" data-odds="2.20">2.20</button>
+              <button class="market-option pick" data-match="Boston Celtics vs Miami Heat" data-market="Over 214.5" data-odds="1.91">1.91</button>
+            </div>
+          </article>
+
+          <article class="fixture-card">
+            <div class="fixture-meta">
+              <span class="league-badge">Cricket</span>
+              <span class="status-live">LIVE</span>
+            </div>
+            <div class="fixture-body">
+              <div class="teams-inline">
+                <strong>Mumbai Indians</strong>
+                <span>vs</span>
+                <strong>RCB</strong>
+              </div>
+              <p>172/4 • 168/7</p>
+            </div>
+            <div class="market-list">
+              <button class="market-option pick" data-match="Mumbai Indians vs RCB" data-market="Mumbai Indians Win" data-odds="1.90">1.90</button>
+              <button class="market-option pick" data-match="Mumbai Indians vs RCB" data-market="RCB Win" data-odds="2.10">2.10</button>
+              <button class="market-option pick" data-match="Mumbai Indians vs RCB" data-market="Total Runs Over 344.5" data-odds="1.94">1.94</button>
+            </div>
+          </article>
+
+          <article class="fixture-card">
+            <div class="fixture-meta">
+              <span class="league-badge">Tennis</span>
+              <span class="status-upcoming">10:30</span>
+            </div>
+            <div class="fixture-body">
+              <div class="teams-inline">
+                <strong>Alcaraz</strong>
+                <span>vs</span>
+                <strong>Sinner</strong>
+              </div>
+              <p>Sunday, 10:30</p>
+            </div>
+            <div class="market-list">
+              <button class="market-option pick" data-match="Alcaraz vs Sinner" data-market="Alcaraz Win" data-odds="1.83">1.83</button>
+              <button class="market-option pick" data-match="Alcaraz vs Sinner" data-market="Sinner Win" data-odds="2.10">2.10</button>
+              <button class="market-option pick" data-match="Alcaraz vs Sinner" data-market="Total Sets Over 2.5" data-odds="1.90">1.90</button>
+            </div>
+          </article>
+
+          <article class="fixture-card">
+            <div class="fixture-meta">
+              <span class="league-badge">Serie A</span>
+              <span class="status-live">HT</span>
+            </div>
+            <div class="fixture-body">
+              <div class="teams-inline">
+                <strong>Inter Milan</strong>
+                <span>vs</span>
+                <strong>Juventus</strong>
+              </div>
+              <p>1:0 • Half time</p>
+              <div class="budget-row">
+                <span class="budget-pill"><strong>Inter</strong> €620M</span>
+                <span class="budget-pill"><strong>Juventus</strong> €360M</span>
+              </div>
+            </div>
+            <div class="market-list">
+              <button class="market-option pick" data-match="Inter Milan vs Juventus" data-market="Inter Milan Win" data-odds="1.88">1.88</button>
+              <button class="market-option pick" data-match="Inter Milan vs Juventus" data-market="Draw" data-odds="3.15">3.15</button>
+              <button class="market-option pick" data-match="Inter Milan vs Juventus" data-market="Juventus Win" data-odds="4.25">4.25</button>
+            </div>
+          </article>
+
+          <article class="fixture-card">
+            <div class="fixture-meta">
+              <span class="league-badge">NBA</span>
+              <span class="status-live">LIVE</span>
+            </div>
+            <div class="fixture-body">
+              <div class="teams-inline">
+                <strong>Boston Celtics</strong>
+                <span>vs</span>
+                <strong>Miami Heat</strong>
+              </div>
+              <p>Q3 • 77:71</p>
+            </div>
+            <div class="market-list">
+              <button class="market-option pick" data-match="Boston Celtics vs Miami Heat" data-market="Boston Celtics Win" data-odds="1.68">1.68</button>
+              <button class="market-option pick" data-match="Boston Celtics vs Miami Heat" data-market="Miami Heat Win" data-odds="2.20">2.20</button>
+              <button class="market-option pick" data-match="Boston Celtics vs Miami Heat" data-market="Over 214.5" data-odds="1.91">1.91</button>
+            </div>
+          </article>
+
+          <article class="fixture-card">
+            <div class="fixture-meta">
+              <span class="league-badge">EuroLeague</span>
+              <span class="status-live">LIVE</span>
+            </div>
+            <div class="fixture-body">
+              <div class="teams-inline">
+                <strong>Real Madrid</strong>
+                <span>vs</span>
+                <strong>Olympiacos</strong>
+              </div>
+              <p>68:62 • 4Q</p>
+            </div>
+            <div class="market-list">
+              <button class="market-option pick" data-match="Real Madrid vs Olympiacos" data-market="Real Madrid Win" data-odds="1.74">1.74</button>
+              <button class="market-option pick" data-match="Real Madrid vs Olympiacos" data-market="Olympiacos Win" data-odds="2.48">2.48</button>
+              <button class="market-option pick" data-match="Real Madrid vs Olympiacos" data-market="Over 150.5" data-odds="1.92">1.92</button>
+            </div>
+          </article>
+
+          <article class="fixture-card">
+            <div class="fixture-meta">
+              <span class="league-badge">ATP</span>
+              <span class="status-live">LIVE</span>
+            </div>
+            <div class="fixture-body">
+              <div class="teams-inline">
+                <strong>Carlos Alcaraz</strong>
+                <span>vs</span>
+                <strong>Jannik Sinner</strong>
+              </div>
+              <p>6:4 • 5:4</p>
+            </div>
+            <div class="market-list">
+              <button class="market-option pick" data-match="Carlos Alcaraz vs Jannik Sinner" data-market="Carlos Alcaraz Win" data-odds="1.83">1.83</button>
+              <button class="market-option pick" data-match="Carlos Alcaraz vs Jannik Sinner" data-market="Jannik Sinner Win" data-odds="2.10">2.10</button>
+              <button class="market-option pick" data-match="Carlos Alcaraz vs Jannik Sinner" data-market="Total Sets Over 2.5" data-odds="1.90">1.90</button>
+            </div>
+          </article>
+        </section>
+
+        <section class="standings-grid">
+          <article class="panel-card league-table-card">
+            <div class="panel-title-row">
+              <div class="league-header">
+                <img class="league-logo" src="assets/logos/premier-league.svg" alt="Premier League Logo" />
+                <h3>Premier League</h3>
+              </div>
+              <span>20 clubs</span>
+            </div>
+            <table class="league-table">
+              <thead>
+                <tr>
+                  <th style="text-align: left;">Team</th>
+                  <th>PL</th>
+                  <th>GD</th>
+                  <th>Pts</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td class="team-cell"><span class="team-pos">1</span><span class="team-name">Arsenal</span></td><td>38</td><td>+45</td><td>89</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">2</span><span class="team-name">Manchester City</span></td><td>38</td><td>+38</td><td>87</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">3</span><span class="team-name">Liverpool</span></td><td>38</td><td>+33</td><td>82</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">4</span><span class="team-name">Chelsea</span></td><td>38</td><td>+12</td><td>71</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">5</span><span class="team-name">Newcastle United</span></td><td>38</td><td>+14</td><td>69</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">6</span><span class="team-name">Aston Villa</span></td><td>38</td><td>+9</td><td>68</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">7</span><span class="team-name">Tottenham Hotspur</span></td><td>38</td><td>+5</td><td>66</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">8</span><span class="team-name">Manchester United</span></td><td>38</td><td>-1</td><td>63</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">9</span><span class="team-name">Brighton & Hove Albion</span></td><td>38</td><td>+3</td><td>61</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">10</span><span class="team-name">West Ham United</span></td><td>38</td><td>-2</td><td>58</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">11</span><span class="team-name">Fulham</span></td><td>38</td><td>-6</td><td>54</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">12</span><span class="team-name">Bournemouth</span></td><td>38</td><td>-8</td><td>50</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">13</span><span class="team-name">Wolverhampton Wanderers</span></td><td>38</td><td>-10</td><td>49</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">14</span><span class="team-name">Crystal Palace</span></td><td>38</td><td>-11</td><td>46</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">15</span><span class="team-name">Brentford</span></td><td>38</td><td>-12</td><td>45</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">16</span><span class="team-name">Everton</span></td><td>38</td><td>-14</td><td>42</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">17</span><span class="team-name">Nottingham Forest</span></td><td>38</td><td>-17</td><td>40</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">18</span><span class="team-name">Leicester City</span></td><td>38</td><td>-24</td><td>34</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">19</span><span class="team-name">Southampton</span></td><td>38</td><td>-31</td><td>30</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">20</span><span class="team-name">Ipswich Town</span></td><td>38</td><td>-39</td><td>24</td></tr>
+              </tbody>
+            </table>
+          </article>
+
+          <article class="panel-card league-table-card">
+            <div class="panel-title-row">
+              <div class="league-header">
+                <img class="league-logo" src="assets/logos/la-liga.svg" alt="La Liga Logo" />
+                <h3>La Liga</h3>
+              </div>
+              <span>20 clubs</span>
+            </div>
+            <table class="league-table">
+              <thead>
+                <tr>
+                  <th style="text-align: left;">Team</th>
+                  <th>PL</th>
+                  <th>GD</th>
+                  <th>Pts</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td class="team-cell"><span class="team-pos">1</span><span class="team-name">Real Madrid</span></td><td>38</td><td>+42</td><td>95</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">2</span><span class="team-name">Barcelona</span></td><td>38</td><td>+35</td><td>88</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">3</span><span class="team-name">Atletico Madrid</span></td><td>38</td><td>+24</td><td>79</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">4</span><span class="team-name">Girona</span></td><td>38</td><td>+14</td><td>76</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">5</span><span class="team-name">Athletic Club</span></td><td>38</td><td>+11</td><td>70</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">6</span><span class="team-name">Real Sociedad</span></td><td>38</td><td>+7</td><td>68</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">7</span><span class="team-name">Villarreal</span></td><td>38</td><td>+4</td><td>64</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">8</span><span class="team-name">Sevilla</span></td><td>38</td><td>+2</td><td>59</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">9</span><span class="team-name">Valencia</span></td><td>38</td><td>-3</td><td>53</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">10</span><span class="team-name">Betis</span></td><td>38</td><td>-1</td><td>52</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">11</span><span class="team-name">Osasuna</span></td><td>38</td><td>-4</td><td>50</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">12</span><span class="team-name">Rayo Vallecano</span></td><td>38</td><td>-6</td><td>48</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">13</span><span class="team-name">Celta Vigo</span></td><td>38</td><td>-7</td><td>46</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">14</span><span class="team-name">Mallorca</span></td><td>38</td><td>-9</td><td>44</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">15</span><span class="team-name">Getafe</span></td><td>38</td><td>-11</td><td>42</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">16</span><span class="team-name">Alaves</span></td><td>38</td><td>-12</td><td>40</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">17</span><span class="team-name">Leganes</span></td><td>38</td><td>-16</td><td>38</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">18</span><span class="team-name">Las Palmas</span></td><td>38</td><td>-18</td><td>36</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">19</span><span class="team-name">Espanyol</span></td><td>38</td><td>-28</td><td>30</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">20</span><span class="team-name">Deportivo Alaves</span></td><td>38</td><td>-32</td><td>28</td></tr>
+              </tbody>
+            </table>
+          </article>
+
+          <article class="panel-card league-table-card">
+            <div class="panel-title-row">
+              <div class="league-header">
+                <img class="league-logo" src="assets/logos/bundesliga.svg" alt="Bundesliga Logo" />
+                <h3>Bundesliga</h3>
+              </div>
+              <span>20 clubs</span>
+            </div>
+            <table class="league-table">
+              <thead>
+                <tr>
+                  <th style="text-align: left;">Team</th>
+                  <th>PL</th>
+                  <th>GD</th>
+                  <th>Pts</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td class="team-cell"><span class="team-pos">1</span><span class="team-name">Bayer Leverkusen</span></td><td>34</td><td>+45</td><td>89</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">2</span><span class="team-name">Bayern Munich</span></td><td>34</td><td>+39</td><td>82</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">3</span><span class="team-name">VfB Stuttgart</span></td><td>34</td><td>+22</td><td>75</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">4</span><span class="team-name">RB Leipzig</span></td><td>34</td><td>+18</td><td>69</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">5</span><span class="team-name">Borussia Dortmund</span></td><td>34</td><td>+13</td><td>64</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">6</span><span class="team-name">Eintracht Frankfurt</span></td><td>34</td><td>+9</td><td>60</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">7</span><span class="team-name">SC Freiburg</span></td><td>34</td><td>+7</td><td>57</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">8</span><span class="team-name">TSG Hoffenheim</span></td><td>34</td><td>+2</td><td>54</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">9</span><span class="team-name">Werder Bremen</span></td><td>34</td><td>-1</td><td>50</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">10</span><span class="team-name">FC Augsburg</span></td><td>34</td><td>-4</td><td>47</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">11</span><span class="team-name">1. FSV Mainz 05</span></td><td>34</td><td>-6</td><td>45</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">12</span><span class="team-name">VfL Bochum</span></td><td>34</td><td>-8</td><td>42</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">13</span><span class="team-name">Union Berlin</span></td><td>34</td><td>-10</td><td>40</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">14</span><span class="team-name">1. FC Heidenheim</span></td><td>34</td><td>-12</td><td>38</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">15</span><span class="team-name">Borussia Mönchengladbach</span></td><td>34</td><td>-14</td><td>37</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">16</span><span class="team-name">VfL Wolfsburg</span></td><td>34</td><td>-17</td><td>34</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">17</span><span class="team-name">FC Köln</span></td><td>34</td><td>-19</td><td>32</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">18</span><span class="team-name">Holstein Kiel</span></td><td>34</td><td>-25</td><td>28</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">19</span><span class="team-name">SV Darmstadt 98</span></td><td>34</td><td>-31</td><td>25</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">20</span><span class="team-name">FC St. Pauli</span></td><td>34</td><td>-39</td><td>23</td></tr>
+              </tbody>
+            </table>
+          </article>
+
+          <article class="panel-card league-table-card">
+            <div class="panel-title-row">
+              <div class="league-header">
+                <img class="league-logo" src="assets/logos/nba.svg" alt="NBA Logo" />
+                <h3>NBA</h3>
+              </div>
+              <span>20 teams</span>
+            </div>
+            <table class="league-table">
+              <thead>
+                <tr>
+                  <th style="text-align: left;">Team</th>
+                  <th>W</th>
+                  <th>L</th>
+                  <th>PCT</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td class="team-cell"><span class="team-pos">1</span><span class="team-name">Boston Celtics</span></td><td>55</td><td>27</td><td>.671</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">2</span><span class="team-name">New York Knicks</span></td><td>51</td><td>31</td><td>.622</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">3</span><span class="team-name">Milwaukee Bucks</span></td><td>49</td><td>33</td><td>.598</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">4</span><span class="team-name">Cleveland Cavaliers</span></td><td>48</td><td>34</td><td>.585</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">5</span><span class="team-name">Miami Heat</span></td><td>46</td><td>36</td><td>.561</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">6</span><span class="team-name">Indiana Pacers</span></td><td>45</td><td>37</td><td>.549</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">7</span><span class="team-name">Toronto Raptors</span></td><td>41</td><td>41</td><td>.500</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">8</span><span class="team-name">Philadelphia 76ers</span></td><td>40</td><td>42</td><td>.488</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">9</span><span class="team-name">Atlanta Hawks</span></td><td>38</td><td>44</td><td>.463</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">10</span><span class="team-name">Orlando Magic</span></td><td>37</td><td>45</td><td>.451</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">11</span><span class="team-name">Oklahoma City Thunder</span></td><td>55</td><td>27</td><td>.671</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">12</span><span class="team-name">Denver Nuggets</span></td><td>53</td><td>29</td><td>.646</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">13</span><span class="team-name">Minnesota Timberwolves</span></td><td>51</td><td>31</td><td>.622</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">14</span><span class="team-name">Los Angeles Lakers</span></td><td>47</td><td>35</td><td>.573</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">15</span><span class="team-name">Golden State Warriors</span></td><td>46</td><td>36</td><td>.561</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">16</span><span class="team-name">Phoenix Suns</span></td><td>45</td><td>37</td><td>.549</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">17</span><span class="team-name">Dallas Mavericks</span></td><td>43</td><td>39</td><td>.524</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">18</span><span class="team-name">Sacramento Kings</span></td><td>41</td><td>41</td><td>.500</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">19</span><span class="team-name">LA Clippers</span></td><td>40</td><td>42</td><td>.488</td></tr>
+                <tr><td class="team-cell"><span class="team-pos">20</span><span class="team-name">San Antonio Spurs</span></td><td>38</td><td>44</td><td>.463</td></tr>
+              </tbody>
+            </table>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>

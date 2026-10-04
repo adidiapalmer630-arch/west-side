@@ -1,0 +1,15 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="plBg" x1="16" y1="12" x2="112" y2="116" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#173A72"/>
+      <stop offset="1" stop-color="#0A1C3C"/>
+    </linearGradient>
+  </defs>
+  <circle cx="64" cy="64" r="52" fill="url(#plBg)"/>
+  <circle cx="64" cy="64" r="48" stroke="#D6B66E" stroke-width="4"/>
+  <path d="M38 42L44 34H84L90 42L84 48H44L38 42Z" fill="#D6B66E"/>
+  <path d="M34 52H94L89 66L82 62H46L39 66L34 52Z" fill="#D6B66E"/>
+  <path d="M41 74H87L82.5 87H45.5L41 74Z" fill="#F4F7FF"/>
+  <path d="M47 59H81L76 72H52L47 59Z" fill="#F4F7FF"/>
+  <text x="64" y="86" text-anchor="middle" font-size="15" font-weight="900" fill="#0E1B34" font-family="Arial, Helvetica, sans-serif">PL</text>
+</svg>

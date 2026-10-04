@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEST SIDE | Online Betting</title>
+    <meta
+      name="description"
+      content="WEST SIDE is a modern online sports betting demo with live fixtures, betting slip functionality, wallet tools, and admin views."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand" aria-label="WEST SIDE home">
+          <span class="brand-mark" aria-hidden="true">W</span>
+          <span class="brand-wordmark">WEST SIDE</span>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html" class="active">Home</a>
+          <a href="sports.html">Sports</a>
+          <a href="dashboard.html">My Bets</a>
+          <a href="wallet.html">Wallet</a>
+          <a href="admin.html">Admin</a>
+        </nav>
+
+        <div class="top-actions">
+          <button class="btn btn-ghost">Log in</button>
+          <button class="btn btn-primary">Join now</button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Demo mode • Virtual wallet</p>
+            <h1>Win with smarter picks on every major match.</h1>
+            <p class="lead">
+              Discover live odds, trending markets and fast bet slips built for a modern
+              sportsbook experience.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="sports.html">Explore odds</a>
+              <a class="btn btn-ghost" href="dashboard.html">My dashboard</a>
+            </div>
+            <ul class="trust-points">
+              <li>Secure wallet flow</li>
+              <li>Live fixtures</li>
+              <li>Responsible play tools</li>
+            </ul>
+          </div>
+
+          <div class="hero-panel">
+            <div class="mini-card">
+              <div class="mini-top">
+                <span>Trending today</span>
+                <span class="dot-live">Live</span>
+              </div>
+
+              <div class="score-row">
+                <div>
+                  <strong>Arsenal</strong>
+                  <small>Home</small>
+                </div>
+                <span>2 : 1</span>
+                <div>
+                  <strong>Chelsea</strong>
+                  <small>Away</small>
+                </div>
+              </div>
+
+              <div class="budget-row">
+                <span class="budget-pill"><strong>Arsenal</strong> €720M</span>
+                <span class="budget-pill"><strong>Chelsea</strong> €1.15B</span>
+              </div>
+
+              <div class="odds-boxes">
+                <button class="odds-pill pick" data-match="Arsenal vs Chelsea" data-market="Arsenal Win" data-odds="1.85">1.85</button>
+                <button class="odds-pill pick" data-match="Arsenal vs Chelsea" data-market="Draw" data-odds="3.45">3.45</button>
+                <button class="odds-pill pick" data-match="Arsenal vs Chelsea" data-market="Chelsea Win" data-odds="4.10">4.10</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="stats-row">
+          <article class="stat-card accent">
+            <span>24/7</span>
+            <small>Live betting</small>
+          </article>
+          <article class="stat-card">
+            <span>320+</span>
+            <small>Matches daily</small>
+          </article>
+          <article class="stat-card">
+            <span>4.9/5</span>
+            <small>User trust</small>
+          </article>
+          <article class="stat-card">
+            <span data-wallet>KES 25,000</span>
+            <small>Demo wallet</small>
+          </article>
+        </section>
+
+        <section class="content-grid">
+          <div class="main-column">
+            <div class="section-title-row">
+              <h2>Featured matches</h2>
+              <a href="sports.html">View all</a>
+            </div>
+
+            <div class="match-grid">
+              <article class="match-card">
+                <div class="match-topline">
+                  <span class="league-badge">Premier League</span>
+                  <span class="status-live">Live</span>
+                </div>
+                <div class="teams">
+                  <div>
+                    <strong>Arsenal</strong>
+                    <small>Home</small>
+                  </div>
+                  <span>vs</span>
+                  <div>
+                    <strong>Chelsea</strong>
+                    <small>Away</small>
+                  </div>
+                </div>
+                <div class="market-list">
+                  <button class="market-option pick" data-match="Arsenal vs Chelsea" data-market="Home Win" data-odds="1.85">1.85</button>
+                  <button class="market-option pick" data-match="Arsenal vs Chelsea" data-market="Draw" data-odds="3.45">3.45</button>
+                  <button class="market-option pick" data-match="Arsenal vs Chelsea" data-market="Away Win" data-odds="4.10">4.10</button>
+                </div>
+              </article>
+
+              <article class="match-card">
+                <div class="match-topline">
+                  <span class="league-badge">Premier League</span>
+                  <span class="status-live">LIVE</span>
+                </div>
+                <div class="teams">
+                  <div>
+                    <strong>Man City</strong>
+                    <small>Home</small>
+                  </div>
+                  <span>vs</span>
+                  <div>
+                    <strong>Aston Villa</strong>
+                    <small>Away</small>
+                  </div>
+                </div>
+                <div class="market-list">
+                  <button class="market-option pick" data-match="Manchester City vs Aston Villa" data-market="Home Win" data-odds="1.68">1.68</button>
+                  <button class="market-option pick" data-match="Manchester City vs Aston Villa" data-market="Draw" data-odds="3.80">3.80</button>
+                  <button class="market-option pick" data-match="Manchester City vs Aston Villa" data-market="Away Win" data-odds="4.70">4.70</button>
+                </div>
+              </article>
+
+              <article class="match-card">
+                <div class="match-topline">
+                  <span class="league-badge">Premier League</span>
+                  <span class="status-live">LIVE</span>
+                </div>
+                <div class="teams">
+                  <div>
+                    <strong>Liverpool</strong>
+                    <small>Home</small>
+                  </div>
+                  <span>vs</span>
+                  <div>
+                    <strong>Newcastle</strong>
+                    <small>Away</small>
+                  </div>
+                </div>
+                <div class="market-list">
+                  <button class="market-option pick" data-match="Liverpool vs Newcastle United" data-market="Liverpool Win" data-odds="1.57">1.57</button>
+                  <button class="market-option pick" data-match="Liverpool vs Newcastle United" data-market="Draw" data-odds="4.20">4.20</button>
+                  <button class="market-option pick" data-match="Liverpool vs Newcastle United" data-market="Newcastle United Win" data-odds="5.40">5.40</button>
+                </div>
+              </article>
+
+              <article class="match-card">
+                <div class="match-topline">
+                  <span class="league-badge">Premier League</span>
+                  <span class="status-live">LIVE</span>
+                </div>
+                <div class="teams">
+                  <div>
+                    <strong>Tottenham</strong>
+                    <small>Home</small>
+                  </div>
+                  <span>vs</span>
+                  <div>
+                    <strong>Chelsea</strong>
+                    <small>Away</small>
+                  </div>
+                </div>
+                <div class="market-list">
+                  <button class="market-option pick" data-match="Tottenham Hotspur vs Chelsea" data-market="Tottenham Hotspur Win" data-odds="2.30">2.30</button>
+                  <button class="market-option pick" data-match="Tottenham Hotspur vs Chelsea" data-market="Draw" data-odds="3.25">3.25</button>
+                  <button class="market-option pick" data-match="Tottenham Hotspur vs Chelsea" data-market="Chelsea Win" data-odds="2.80">2.80</button>
+                </div>
+              </article>
+
+              <article class="match-card">
+                <div class="match-topline">
+                  <span class="league-badge">Champions League</span>
+                  <span class="status-live">HT</span>
+                </div>
+                <div class="teams">
+                  <div>
+                    <strong>PSG</strong>
+                    <small>Home</small>
+                  </div>
+                  <span>vs</span>
+                  <div>
+                    <strong>AC Milan</strong>
+                    <small>Away</small>
+                  </div>
+                </div>
+                <div class="market-list">
+                  <button class="market-option pick" data-match="Paris Saint-Germain vs AC Milan" data-market="Paris Saint-Germain Win" data-odds="1.78">1.78</button>
+                  <button class="market-option pick" data-match="Paris Saint-Germain vs AC Milan" data-market="Draw" data-odds="3.50">3.50</button>
+                  <button class="market-option pick" data-match="Paris Saint-Germain vs AC Milan" data-market="AC Milan Win" data-odds="4.25">4.25</button>
+                </div>
+              </article>
+
+              <article class="match-card">
+                <div class="match-topline">
+                  <span class="league-badge">La Liga</span>
+                  <span class="status-live">LIVE</span>
+                </div>
+                <div class="teams">
+                  <div>
+                    <strong>Real Madrid</strong>
+                    <small>Home</small>
+                  </div>
+                  <span>vs</span>
+                  <div>
+                    <strong>Barcelona</strong>
+                    <small>Away</small>
+                  </div>
+                </div>
+                <div class="market-list">
+                  <button class="market-option pick" data-match="Real Madrid vs Barcelona" data-market="Home Win" data-odds="2.10">2.10</button>
+                  <button class="market-option pick" data-match="Real Madrid vs Barcelona" data-market="Draw" data-odds="3.40">3.40</button>
+                  <button class="market-option pick" data-match="Real Madrid vs Barcelona" data-market="Away Win" data-odds="2.90">2.90</button>
+                </div>
+              </article>
+
+              <article class="match-card">
+                <div class="match-topline">
+                  <span class="league-badge">La Liga</span>
+                  <span class="status-live">LIVE</span>
+                </div>
+                <div class="teams">
+                  <div>
+                    <strong>Atletico</strong>
+                    <small>Home</small>
+                  </div>
+                  <span>vs</span>
+                  <div>
+                    <strong>Sevilla</strong>
+                    <small>Away</small>
+                  </div>
+                </div>
+                <div class="market-list">
+                  <button class="market-option pick" data-match="Atletico Madrid vs Sevilla" data-market="Atletico Madrid Win" data-odds="1.82">1.82</button>
+                  <button class="market-option pick" data-match="Atletico Madrid vs Sevilla" data-market="Draw" data-odds="3.50">3.50</button>
+                  <button class="market-option pick" data-match="Atletico Madrid vs Sevilla" data-market="Sevilla Win" data-odds="4.10">4.10</button>
+                </div>
+              </article>
+
+              <article class="match-card">
+                <div class="match-topline">
+                  <span class="league-badge">Bundesliga</span>
+                  <span class="status-live">LIVE</span>
+                </div>
+                <div class="teams">
+                  <div>
+                    <strong>Bayern</strong>
+                    <small>Home</small>
+                  </div>
+                  <span>vs</span>
+                  <div>
+                    <strong>RB Leipzig</strong>
+                    <small>Away</small>
+                  </div>
+                </div>
+                <div class="market-list">
+                  <button class="market-option pick" data-match="Bayern Munich vs RB Leipzig" data-market="Bayern Munich Win" data-odds="1.58">1.58</button>
+                  <button class="market-option pick" data-match="Bayern Munich vs RB Leipzig" data-market="Draw" data-odds="4.30">4.30</button>
+                  <button class="market-option pick" data-match="Bayern Munich vs RB Leipzig" data-market="RB Leipzig Win" data-odds="5.20">5.20</button>
+                </div>
+              </article>
+
+              <article class="match-card">
+                <div class="match-topline">
+                  <span class="league-badge">NBA</span>
+                  <span class="status-upcoming">15:00</span>
+                </div>
+                <div class="teams">
+                  <div>
+                    <strong>Lakers</strong>
+                    <small>Home</small>
+                  </div>
+                  <span>vs</span>
+                  <div>
+                    <strong>Warriors</strong>
+                    <small>Away</small>
+                  </div>
+                </div>
+                <div class="market-list">
+                  <button class="market-option pick" data-match="Lakers vs Warriors" data-market="Home Win" data-odds="1.72">1.72</button>
+                  <button class="market-option pick" data-match="Lakers vs Warriors" data-market="Away Win" data-odds="2.15">2.15</button>
+                  <button class="market-option pick" data-match="Lakers vs Warriors" data-market="Over 210.5" data-odds="1.96">1.96</button>
+                </div>
+              </article>
+
+              <article class="match-card">
+                <div class="match-topline">
+                  <span class="league-badge">NBA</span>
+                  <span class="status-live">LIVE</span>
+                </div>
+                <div class="teams">
+                  <div>
+                    <strong>Celtics</strong>
+                    <small>Home</small>
+                  </div>
+                  <span>vs</span>
+                  <div>
+                    <strong>Heat</strong>
+                    <small>Away</small>
+                  </div>
+                </div>
+                <div class="market-list">
+                  <button class="market-option pick" data-match="Boston Celtics vs Miami Heat" data-market="Boston Celtics Win" data-odds="1.68">1.68</button>
+                  <button class="market-option pick" data-match="Boston Celtics vs Miami Heat" data-market="Miami Heat Win" data-odds="2.20">2.20</button>
+                  <button class="market-option pick" data-match="Boston Celtics vs Miami Heat" data-market="Over 214.5" data-odds="1.91">1.91</button>
+                </div>
+              </article>
+
+              <article class="match-card">
+                <div class="match-topline">
+                  <span class="league-badge">ATP</span>
+                  <span class="status-live">LIVE</span>
+                </div>
+                <div class="teams">
+                  <div>
+                    <strong>Alcaraz</strong>
+                    <small>Player 1</small>
+                  </div>
+                  <span>vs</span>
+                  <div>
+                    <strong>Sinner</strong>
+                    <small>Player 2</small>
+                  </div>
+                </div>
+                <div class="market-list">
+                  <button class="market-option pick" data-match="Carlos Alcaraz vs Jannik Sinner" data-market="Carlos Alcaraz Win" data-odds="1.83">1.83</button>
+                  <button class="market-option pick" data-match="Carlos Alcaraz vs Jannik Sinner" data-market="Jannik Sinner Win" data-odds="2.10">2.10</button>
+                  <button class="market-option pick" data-match="Carlos Alcaraz vs Jannik Sinner" data-market="Total Sets Over 2.5" data-odds="1.90">1.90</button>
+                </div>
+              </article>
+
+              <article class="match-card">
+                <div class="match-topline">
+                  <span class="league-badge">Cricket</span>
+                  <span class="status-live">LIVE</span>
+                </div>
+                <div class="teams">
+                  <div>
+                    <strong>Mumbai</strong>
+                    <small>Home</small>
+                  </div>
+                  <span>vs</span>
+                  <div>
+                    <strong>RCB</strong>
+                    <small>Away</small>
+                  </div>
+                </div>
+                <div class="market-list">
+                  <button class="market-option pick" data-match="Mumbai Indians vs RCB" data-market="Mumbai Indians Win" data-odds="1.90">1.90</button>
+                  <button class="market-option pick" data-match="Mumbai Indians vs RCB" data-market="RCB Win" data-odds="2.10">2.10</button>
+                  <button class="market-option pick" data-match="Mumbai Indians vs RCB" data-market="Total Runs Over 344.5" data-odds="1.94">1.94</button>
+                </div>
+              </article>
+
+              <article class="match-card">
+                <div class="match-topline">
+                  <span class="league-badge">ATP</span>
+                  <span class="status-upcoming">18:30</span>
+                </div>
+                <div class="teams">
+                  <div>
+                    <strong>Djokovic</strong>
+                    <small>Player 1</small>
+                  </div>
+                  <span>vs</span>
+                  <div>
+                    <strong>Medvedev</strong>
+                    <small>Player 2</small>
+                  </div>
+                </div>
+                <div class="market-list">
+                  <button class="market-option pick" data-match="Djokovic vs Medvedev" data-market="Djokovic Win" data-odds="1.93">1.93</button>
+                  <button class="market-option pick" data-match="Djokovic vs Medvedev" data-market="Total Games Over 21.5" data-odds="1.88">1.88</button>
+                  <button class="market-option pick" data-match="Djokovic vs Medvedev" data-market="Medvedev Win" data-odds="2.05">2.05</button>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <aside class="bet-slip-panel">
+            <div class="bet-slip-header">
+              <h3>Bet slip</h3>
+              <span id="slip-count">0 picks</span>
+            </div>
+
+            <div id="slip-items" class="slip-items empty-state">
+              <p>Your selections will appear here.</p>
+            </div>
+
+            <div class="stake-row">
+              <label for="stake">Stake</label>
+              <div class="stake-input-wrap">
+                <span>KES</span>
+                <input id="stake" type="number" min="10" value="100" />
+              </div>
+            </div>
+
+            <div class="payout-row">
+              <span>Potential return</span>
+              <strong id="potential-return">KES 0</strong>
+            </div>
+
+            <button id="place-bet" class="btn btn-primary full-width">Place bet</button>
+            <p class="bet-note">Demo mode uses virtual funds and no real-money transactions.</p>
+          </aside>
+        </section>
+
+        <section class="promo-grid">
+          <article class="promo-card dark">
+            <span class="promo-tag">Weekend boost</span>
+            <h3>24% multi-bet boost</h3>
+            <p>Unlock extra value on top football fixtures this weekend.</p>
+          </article>
+
+          <article class="promo-card">
+            <span class="promo-tag">Live system</span>
+            <h3>Live odds in real time</h3>
+            <p>Watch markets move as the match develops and act instantly.</p>
+          </article>
+
+          <article class="promo-card">
+            <span class="promo-tag">Safe play</span>
+            <h3>Responsible gambling tools</h3>
+            <p>Budget limits, account controls and self-exclusion features included.</p>
+          </article>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div>
+          <div class="brand small-brand">
+            <span class="brand-mark" aria-hidden="true">W</span>
+            <span class="brand-wordmark">WEST SIDE</span>
+          </div>
+        </div>
+        <div>
+          <p>Sports betting demo for concept, UI and workflow validation.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>

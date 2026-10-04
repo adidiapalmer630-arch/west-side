@@ -1,0 +1,9 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="64" cy="64" r="50" fill="#0B1832"/>
+  <circle cx="64" cy="64" r="45" stroke="#D11F3A" stroke-width="4"/>
+  <path d="M26 64H102" stroke="#F4F7FF" stroke-width="4"/>
+  <path d="M64 26V102" stroke="#F4F7FF" stroke-width="4"/>
+  <path d="M38 38L90 90" stroke="#D6B66E" stroke-width="4"/>
+  <path d="M90 38L38 90" stroke="#D6B66E" stroke-width="4"/>
+  <text x="64" y="79" text-anchor="middle" font-size="17" font-weight="900" fill="#F4F7FF" font-family="Arial, Helvetica, sans-serif">NBA</text>
+</svg>

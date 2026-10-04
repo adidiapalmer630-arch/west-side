@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEST SIDE | Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body data-page="admin">
+    <div class="page-shell page-inner">
+      <header class="topbar">
+        <div class="brand" aria-label="WEST SIDE home">
+          <span class="brand-mark" aria-hidden="true">W</span>
+          <span class="brand-wordmark">WEST SIDE</span>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="sports.html">Sports</a>
+          <a href="dashboard.html">My Bets</a>
+          <a href="wallet.html">Wallet</a>
+          <a href="admin.html" class="active">Admin</a>
+        </nav>
+
+        <div class="top-actions">
+          <button class="btn btn-ghost">Operations</button>
+          <button class="btn btn-primary">System log</button>
+        </div>
+      </header>
+
+      <main class="page-content admin-page">
+        <section class="admin-hero">
+          <div>
+            <p class="eyebrow">Operations center</p>
+            <h1>Live betting admin</h1>
+          </div>
+          <div class="admin-actions">
+            <button class="btn btn-ghost" type="button">Refresh feed</button>
+            <button class="btn btn-primary" type="button">Export report</button>
+          </div>
+        </section>
+
+        <section class="stats-row admin-stats">
+          <article class="stat-card accent">
+            <span>1,284</span>
+            <small>Active users</small>
+          </article>
+          <article class="stat-card">
+            <span>48</span>
+            <small>Live matches</small>
+          </article>
+          <article class="stat-card">
+            <span>86</span>
+            <small>Open payouts</small>
+          </article>
+          <article class="stat-card">
+            <span>9</span>
+            <small>Risk alerts</small>
+          </article>
+        </section>
+
+        <section class="admin-grid">
+          <article class="panel-card admin-live-panel">
+            <div class="panel-title-row">
+              <h3>Live match board</h3>
+              <span id="admin-feed-time">Updated 12s ago</span>
+            </div>
+
+            <div id="live-match-list" class="live-match-list"></div>
+          </article>
+
+          <article class="panel-card risk-panel">
+            <div class="panel-title-row">
+              <h3>Risk alerts</h3>
+              <span>Requires review</span>
+            </div>
+
+            <ul class="alert-list">
+              <li>
+                <div>
+                  <strong>Mary Wanjiku</strong>
+                  <small>Large deposit pattern detected</small>
+                </div>
+                <span class="status-pill status-open">High</span>
+              </li>
+              <li>
+                <div>
+                  <strong>Joseph Otieno</strong>
+                  <small>Multiple same-match stakes</small>
+                </div>
+                <span class="status-pill status-closed">Medium</span>
+              </li>
+              <li>
+                <div>
+                  <strong>Account AB-442</strong>
+                  <small>Self-exclusion flag review</small>
+                </div>
+                <span class="status-pill status-win">Clear</span>
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="admin-grid lower-grid">
+          <article class="panel-card">
+            <div class="panel-title-row settlement-head">
+              <h3>Settlement queue</h3>
+              <div class="table-search-wrap">
+                <input id="settlement-search" type="search" placeholder="Search customer or market" aria-label="Search settlements" />
+              </div>
+            </div>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Customer</th>
+                  <th>Market</th>
+                  <th>Amount</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="settlement-table-body"></tbody>
+            </table>
+          </article>
+
+          <article class="panel-card">
+            <div class="panel-title-row">
+              <h3>Operations feed</h3>
+              <span>Live system</span>
+            </div>
+
+            <ul class="feed-list">
+              <li>
+                <span class="feed-time">14:24</span>
+                <p>Odds for Arsenal vs Chelsea updated by feed provider.</p>
+              </li>
+              <li>
+                <span class="feed-time">14:21</span>
+                <p>Withdrawal batch processed for 18 verified accounts.</p>
+              </li>
+              <li>
+                <span class="feed-time">14:18</span>
+                <p>Risk rule triggered on two duplicate stake patterns.</p>
+              </li>
+            </ul>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>

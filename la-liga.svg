@@ -1,0 +1,9 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M64 10L92 18V38C92 58 81 76 64 92C47 76 36 58 36 38V18L64 10Z" fill="#F4F7FF"/>
+  <path d="M64 17L84 23V38C84 53 76.2 66.4 64 78.6C51.8 66.4 44 53 44 38V23L64 17Z" fill="#0A1B39"/>
+  <path d="M28 39H100V51H28V39Z" fill="#DD1F3A"/>
+  <path d="M28 51H100V63H28V51Z" fill="#F4F7FF"/>
+  <path d="M28 63H100V75H28V63Z" fill="#DD1F3A"/>
+  <circle cx="64" cy="95" r="12" fill="#D6B66E"/>
+  <text x="64" y="100" text-anchor="middle" font-size="12" font-weight="900" fill="#0A1B39" font-family="Arial, Helvetica, sans-serif">LA</text>
+</svg>

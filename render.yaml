@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: westside-api
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm run start:prod
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: HOST
+        value: 0.0.0.0
+      - key: PORT
+        value: 3000
+      - key: JWT_SECRET
+        generateValue: true
+      - key: ALLOWED_ORIGINS
+        value: https://westside-api.onrender.com
+      - key: PAYMENT_PROVIDER
+        value: demo-mpesa
+      - key: ODDS_PROVIDER
+        value: simulated-feed
+      - key: DATABASE_URL
+        sync: false

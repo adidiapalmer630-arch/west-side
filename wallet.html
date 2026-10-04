@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEST SIDE | Wallet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="page-shell page-inner">
+      <header class="topbar">
+        <div class="brand" aria-label="WEST SIDE home">
+          <span class="brand-mark" aria-hidden="true">W</span>
+          <span class="brand-wordmark">WEST SIDE</span>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="sports.html">Sports</a>
+          <a href="dashboard.html">My Bets</a>
+          <a href="wallet.html" class="active">Wallet</a>
+          <a href="admin.html">Admin</a>
+        </nav>
+
+        <div class="top-actions">
+          <button class="btn btn-ghost">Log in</button>
+          <button class="btn btn-primary">Join now</button>
+        </div>
+      </header>
+
+      <main class="wallet-page">
+        <section class="wallet-summary panel-card">
+          <div>
+            <p class="eyebrow">Current balance</p>
+            <h1 data-wallet>KES 25,000</h1>
+          </div>
+          <div class="wallet-actions">
+            <button class="btn btn-primary" id="quick-deposit">Deposit</button>
+            <button class="btn btn-ghost" id="quick-withdraw">Withdraw</button>
+          </div>
+        </section>
+
+        <section class="wallet-grid">
+          <article class="panel-card">
+            <h3>Deposit funds</h3>
+            <form id="deposit-form" class="money-form">
+              <label>
+                Amount
+                <input type="number" id="deposit-amount" min="50" value="1000" required />
+              </label>
+              <label>
+                Payment method
+                <select>
+                  <option>M-Pesa</option>
+                  <option>Visa</option>
+                  <option>Bank transfer</option>
+                </select>
+              </label>
+              <button type="submit" class="btn btn-primary full-width">Deposit now</button>
+            </form>
+          </article>
+
+          <article class="panel-card">
+            <h3>Withdraw funds</h3>
+            <form id="withdraw-form" class="money-form">
+              <label>
+                Amount
+                <input type="number" id="withdraw-amount" min="100" value="500" required />
+              </label>
+              <label>
+                Destination
+                <select>
+                  <option>M-Pesa</option>
+                  <option>Bank account</option>
+                </select>
+              </label>
+              <button type="submit" class="btn btn-ghost full-width">Request withdrawal</button>
+            </form>
+          </article>
+        </section>
+
+        <section class="panel-card transaction-panel">
+          <div class="panel-title-row">
+            <h3>Recent transactions</h3>
+            <span>Updated now</span>
+          </div>
+          <ul id="transaction-list" class="transaction-list">
+            <li><span>Deposit • M-Pesa</span><strong>KES 2,000</strong></li>
+            <li><span>Bet settlement</span><strong>KES 1,250</strong></li>
+            <li><span>Withdrawal request</span><strong>-KES 800</strong></li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>

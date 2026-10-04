@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEST SIDE | My Bets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="page-shell page-inner">
+      <header class="topbar">
+        <div class="brand" aria-label="WEST SIDE home">
+          <span class="brand-mark" aria-hidden="true">W</span>
+          <span class="brand-wordmark">WEST SIDE</span>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="sports.html">Sports</a>
+          <a href="dashboard.html" class="active">My Bets</a>
+          <a href="wallet.html">Wallet</a>
+          <a href="admin.html">Admin</a>
+        </nav>
+
+        <div class="top-actions">
+          <button class="btn btn-ghost">Profile</button>
+          <button class="btn btn-primary">Account</button>
+        </div>
+      </header>
+
+      <main class="dashboard-layout">
+        <section class="dashboard-header">
+          <div>
+            <p class="eyebrow">Welcome back</p>
+            <h1>Emmanuel Kibet</h1>
+          </div>
+          <div class="wallet-chip">
+            <span>Available balance</span>
+            <strong data-wallet>KES 25,000</strong>
+          </div>
+        </section>
+
+        <section class="stats-row dashboard-stats">
+          <article class="stat-card accent">
+            <span>4</span>
+            <small>Active bets</small>
+          </article>
+          <article class="stat-card">
+            <span>18</span>
+            <small>Total bets</small>
+          </article>
+          <article class="stat-card">
+            <span>KES 9,450</span>
+            <small>Won</small>
+          </article>
+          <article class="stat-card">
+            <span>KES 4,280</span>
+            <small>Pending</small>
+          </article>
+        </section>
+
+        <section class="dashboard-grid">
+          <article class="panel-card">
+            <div class="panel-title-row">
+              <h3>Recent activity</h3>
+              <a href="sports.html">Add picks</a>
+            </div>
+            <ul id="bet-history" class="activity-list">
+              <li>
+                <div>
+                  <strong>Arsenal vs Chelsea</strong>
+                  <small>Arsenal Win • 1.85 • KES 500</small>
+                </div>
+                <span class="status-pill status-open">Open</span>
+              </li>
+              <li>
+                <div>
+                  <strong>Barcelona vs Real Madrid</strong>
+                  <small>Draw • 3.50 • KES 400</small>
+                </div>
+                <span class="status-pill status-win">Won</span>
+              </li>
+              <li>
+                <div>
+                  <strong>Lakers vs Warriors</strong>
+                  <small>Over 210.5 • 1.96 • KES 300</small>
+                </div>
+                <span class="status-pill status-closed">Settled</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="panel-card">
+            <div class="panel-title-row">
+              <h3>Responsible play</h3>
+            </div>
+            <div class="settings-list">
+              <div>
+                <span>Daily limit</span>
+                <strong>KES 5,000</strong>
+              </div>
+              <div>
+                <span>Session timeout</span>
+                <strong>30 min</strong>
+              </div>
+              <div>
+                <span>Self-exclusion</span>
+                <strong>Disabled</strong>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>
